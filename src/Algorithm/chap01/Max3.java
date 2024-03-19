@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class Max3 {
 	public static void main(String[]args) {
 		//변수 a,b,c에 값을 입력받아 세 값의 최대값 구하기 p.13
-		Scanner stdIn = new Scanner(System.in);//키보드 입력을 위한 scanner
+		Scanner stdIn = new Scanner(System.in);//키보드 입력을 위한 Scanner
+		//System.in 키보드와 연결된 표준 입력 스트임
 		
 		System.out.println("세 정수의 최대값을 구합니다.");
 		System.out.print("a의 값 : "); int a = stdIn.nextInt(); //정수 a값 입력
 		System.out.print("b의 값 : "); int b = stdIn.nextInt(); //정수 b값 입력
 		System.out.print("c의 값 : "); int c = stdIn.nextInt(); //정수 c값 입력
+		//next.int()호출하면 정수값을 얻을 수 있음
+		//next.Boolean(),nextLint()등등 자료형에 따른 메서드 존재함
 	
 		//a,b,c의 최대값을 구하여 max에 대입
 		int max=a; //max 초기값 세팅
@@ -28,10 +31,15 @@ public class Max3 {
 		 * 
 		 * 2. 변수의 종류
 		 * 2-1 멤버 변수(instance변수)
+		 * - 클래스에 선언된 변수
+		 * - 클래스의 멤버 역할을 하는 멤버 변수
+		 * - 클래스 내의 여러 메서드에서 공통으로 사용가능, 클래스 외부에서도 접근 가능하게 할 수 있음
+		 * 
 		 * 2-2 클래스 변수(static변수)
 		 * 2-3 지역 변수(local 변수)
 		 * - 메서드나 {} 블럭 안에서 선언된 변수
 		 * - 지역 변수는 반드시 초기화, 초기화하지 않으면 Error남
+		 * - 메서드가 시작될 때 생성되어 메서드를 빠져나가면 사라짐
 		 * 
 		 * 
 		 * 
