@@ -12,13 +12,16 @@ public class DigitsNo {
 		System.out.println("입력한 정수의 자리수를 출력합니다.");
 		int num =0;
 		
+		//양수인지 확인
 		do {
 			System.out.print("정수를 입력하세요 : ");
 			num = sdtIn.nextInt();
 		}while(num<=0);
 		
-		int leng = 0;
+		int leng = 0; //자리수 표현 변수 초기화
 		
+		//정수를 10으로 나눠서 0이 될 때 까지 반복하면
+		//그 반복 횟수를 누적하면 해당 정수의 자릿수를 구할 수 있음
 		while(num>0) {
 			num/=10;
 			leng++;
