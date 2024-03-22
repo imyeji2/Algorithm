@@ -26,7 +26,7 @@ public class SumVerbose1 {
 				System.out.print(i+"=");
 			}
 			
-			//n값에 따라 많은 반복이 수행될 수 있어 비효율적
+			//n값에 따라 많은 판단이 수행될 수 있어 비효율적
 			//SumVerbose2에서 수정
 			sum+=i;
 		}
