@@ -18,6 +18,9 @@ public class SumWhile {
 		while(i<=n) { //1부터 n가지 반복
 			sum+=i; //sum에 i 더하기
 			i++; //i값 1씩 증가
+			
+			//연습문제 Q6. while문이 종료될 때 변수값 i가 n+1이 되는지 변수 i값을 출력하도록 수정
+			System.out.println("i값은 = " +i);
 		}
 		
 		System.out.println("1부터 " + n +"까지의 합은 " +sum+" 입니다.");
