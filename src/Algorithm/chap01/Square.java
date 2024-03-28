@@ -6,10 +6,14 @@ public class Square {
 	
 	public static void main(String[]args) {
 		Scanner sdtIn = new Scanner(System.in);
+		int num;
 		
 		System.out.println("정사각형을 출력합니다.");
-		System.out.print("변의 길이 : ");
-		int num = sdtIn.nextInt();
+		
+		do {//양수만 입력받기 위한 while문
+			System.out.print("변의 길이 : ");
+			num = sdtIn.nextInt();
+		}while(num<=0);
 		
 		for(int i=0; i<num;i++) {//num이 5면 5줄
 			for(int j=0; j<num;j++) {//5개 출력
